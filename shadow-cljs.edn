@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:main
+  {:target :esm
+   :output-dir "public/js"
+   :modules {:main {:init-fn core/init}}}}}
